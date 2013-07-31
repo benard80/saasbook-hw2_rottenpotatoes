@@ -21,7 +21,7 @@ class MoviesController < ApplicationController
   end
 
   def edit
-    @movie = Movie.find params[:id]
+    @movie = Movie.find params[:id] + ' ' + params[:direction])
   end
 
   def update
